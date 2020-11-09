@@ -8,6 +8,8 @@
     <artifactId>Labb-JUnit</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <name>Labb-JUnit</name>
+
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -29,5 +31,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
