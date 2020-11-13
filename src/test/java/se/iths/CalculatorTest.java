@@ -13,27 +13,33 @@ class CalculatorTest {
 
     @Test
     @DisplayName("Testar addNumbers() i Calculatorklassen")
-    void addNumbers() {
+    void testAddNumbers() {
         Calculator calculator = new Calculator();
         assertEquals(6, calculator.addNumbers(4,2));
     }
 
     @RepeatedTest(5)
     @DisplayName("Testar subtractNumbers() i Calculatorklassen")
-    void subtractNumbers() {
+    void testSubtractNumbers() {
         Calculator calculator = new Calculator();
         assertEquals(6, calculator.subtractNumbers(8,2));
     }
 
-    @Disabled
-    void multiplyNumbers() {
+    @Test
+    void testMultiplyNumbers() {
         Calculator calculator = new Calculator();
         assertEquals(6, calculator.multiplyNumbers(3,2));
     }
 
+    @Disabled
+    void testMultiplyNumbersIsNotAdding() {
+        Calculator calculator = new Calculator();
+        assertNotEquals(5, calculator.multiplyNumbers(3,2));
+    }
+
     @Test
     @DisplayName("Testar divideNumbers() i Calculatorklassen")
-    void divideNumbers() {
+    void testDivideNumbers() {
         Calculator calculator = new Calculator();
         assertTrue(calculator.divideNumbers(12,2) == 6);
     }

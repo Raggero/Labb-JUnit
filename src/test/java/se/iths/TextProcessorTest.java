@@ -13,19 +13,19 @@ class TextProcessorTest {
     }
 
     @Test
-    void stringToUpperCase() {
+    void testStringToUppercase() {
         TextProcessor textProcessor = new TextProcessor();
-        assertEquals("HEJ", textProcessor.stringToUpperCase("hej"));
+        assertEquals("HEJ", textProcessor.stringToUppercase("hej"));
     }
 
     @Test
-    void stringToLowerCase() {
+    void testStringToLowerCaseEqualsTrue() {
         TextProcessor textProcessor = new TextProcessor();
         assertTrue(textProcessor.stringToLowerCase("HEJ").equals("hej"));
     }
 
     @Test
-    void stringToReverse() {
+    void testStringToReverseNotNull() {
         TextProcessor textProcessor = new TextProcessor();
         assertNotNull(textProcessor.stringToReverse("Hej"));
     }
